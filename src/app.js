@@ -29,14 +29,14 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "Bhaavi"
+    name: "Gopi"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
-    name: "Bhaavi"
+    name: "Gopi"
   });
 });
 
@@ -84,21 +84,21 @@ app.get("/help", (req, res) => {
   res.render("help", {
     helpmsg: "Help??",
     title: "Help",
-    name: "Bhaavi"
+    name: "Gopi"
   });
 });
 
 app.get("/help/*", (req, res) => {
   res.render("404", {
     errorMessage: "Help article not found",
-    name: "Bhaavi",
+    name: "Gopi",
     title: "404"
   });
 });
 app.get("*", (req, res) => {
   res.render("404", {
     errorMessage: "404 Page not Found",
-    name: "Bhaavi",
+    name: "Gopi",
     title: "404"
   });
 });
